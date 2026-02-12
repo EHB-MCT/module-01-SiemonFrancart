@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 // Text variables (Dutch)
 let titleNL = "De Appel";
 let subtitleNL = "Een smakelijke vrucht";
@@ -9,11 +11,22 @@ let subtitleFR = "Un fruit délicieux";
 let textFR = "La pomme est un fruit comestible produit par un pommier. Les pommes sont riches en fibres et en vitamine C. Il existe des milliers de variétés, allant du vert et jaune au rouge foncé.";
 
 // 1. Select text elements
+let title = document.querySelector("#title");
+let subTitle = document.querySelector("#subtitle");
+let text = document.querySelector("#text");
+let article = document.querySelectorAll(".content-wrapper");
 
 //2. Set initial content on load
+title.innerText = titleNL;
+subTitle.innerText = subtitleNL;
+text.innerText = textNL;
+document.getElementById("btn-nl").disabled = true;
 
 //3. Select buttons
+
 
 //4. Add event listeners
 
 //5. Create, configure and append image
+//let img = document.createElement(Image);
+//img.setAttribute("href", "[appel.jpg");
